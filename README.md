@@ -10,20 +10,27 @@ See mmdetection official website for **environment configuration**:
                 
 https://github.com/open-mmlab/mmdetection
 
+If you want to reproduce our results, please download our data and weights：
 
-Food_dataset:
+
+our train dataset:
+
+  Food_dataset:
 
             链接：https://pan.baidu.com/s/1w9uGNZbi0rQnMLuid8ngAw 
             提取码：9ve2 
             --来自百度网盘超级会员V4的分享
 
-train_weight:
+our train weight:
+
+  train_weight:
 
             链接：https://pan.baidu.com/s/1VyA1xVu8wQcQ8bZIgGnC2Q 
             提取码：bslv 
             --来自百度网盘超级会员V4的分享
 
 Test existing models:
+
             # single-gpu testing
             python tools/test.py \
                 ${CONFIG_FILE} \
@@ -58,7 +65,7 @@ Training on multiple GPUs
             CONFIG_FILE='../configs/pascal_voc/cascade_food_voc.py'
 
 
-    Result as following:
+Result as following:
 
                 ---------------iou_thr: 0.5---------------
 
