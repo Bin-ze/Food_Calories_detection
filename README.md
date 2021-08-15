@@ -36,6 +36,10 @@ second:
         
         Please refer to copy-paste/README.md to complete the data set generation
 
+last:
+        
+        Training refer to the following  
+
 # Test existing models:
             # single-gpu testing
             python tools/test.py \
