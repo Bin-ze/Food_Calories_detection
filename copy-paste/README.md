@@ -27,7 +27,7 @@ This greatly enhances the diversity of the data set, and then generates **label.
             file name   x_min,y_min,x_max,y_max,class_id
 
 
-Then:
+**Then:**
 
         run  python txt_xml.py 
             
@@ -39,11 +39,11 @@ Please integrate the generated data set into the following form
             -Annotatations  (xml)
             -JPEGImages    (image)
 
-Finally: 
+**Finally:**
 
         run python   voc_split_trainval.py 
 
-to generate a data set similar to the VOC data set catalog.
+to generate a data set similar to the VOC data set:
 
         -Food_voc
             --Annotatations  (xml)
