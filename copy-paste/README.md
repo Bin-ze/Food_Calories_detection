@@ -1,4 +1,4 @@
-We use copy-paste to generate disguised data
+We use copy-paste to generate fake data
 
 We have annotated 380 pieces of data of 10 categories, and generated more data through this method for training the network.
 Got very high accuracy.

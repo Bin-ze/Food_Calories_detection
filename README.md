@@ -1,42 +1,36 @@
-We implemented **food detection** using mmdetection,
-We hope to help people eat healthier food by detecting food calories
+We implemented **food detection** using mmdetection,We hope to help people eat healthier food by detecting food calories
 Our model has achieved very good accuracy on the data set we built ourselves.
 
-**Food_class:** 
+Food_class:
 
-    ('pingguo', 'xiangjiao', 'fanqie', 'huanggua', 'xigua', 'li', 'juzi',
+('pingguo', 'xiangjiao', 'fanqie', 'huanggua', 'xigua', 'li', 'juzi',
                'caomei', 'putao', 'mihoutao' )
 
 See mmdetection official website for **environment configuration**: 
                 
 https://github.com/open-mmlab/mmdetection
 
-**If you want to reproduce our results, please download our data and weights：**
+If you want to reproduce our results, please download our data and weights：
 
-    # Food_dataset:
+
+our train dataset:
+
+  Food_dataset:
 
             链接：https://pan.baidu.com/s/1w9uGNZbi0rQnMLuid8ngAw 
             提取码：9ve2 
             --来自百度网盘超级会员V4的分享
 
-    # train_weight:
+our train weight:
+
+  train_weight:
 
             链接：https://pan.baidu.com/s/1VyA1xVu8wQcQ8bZIgGnC2Q 
             提取码：bslv 
             --来自百度网盘超级会员V4的分享
-**If you want to rebuild our data set, please read the instructions below:**
 
-first:
-                
-        download our orign data:
-            链接：https://pan.baidu.com/s/11XmcjbrtCf1Tu2q2Wml8aw 
-            提取码：u7y8
+Test existing models:
 
-second:
-        
-        Please refer to copy-paste/README.md to complete the data set generation
-
-# Test existing models:
             # single-gpu testing
             python tools/test.py \
                 ${CONFIG_FILE} \
@@ -45,7 +39,7 @@ second:
                 [--eval ${EVAL_METRICS}] \
                 [--show]
 
-#   multi-gpu testing
+multi-gpu testing：
 
             bash tools/dist_test.sh \
                 ${CONFIG_FILE} \
@@ -55,14 +49,14 @@ second:
                 [--eval ${EVAL_METRICS}]
     
 
-# Training on a single GPU:
+Training on a single GPU:
 
             python tools/train.py \
                 ${CONFIG_FILE} \
                 [optional arguments]
             CONFIG_FILE='../configs/pascal_voc/cascade_food_voc.py'
 
-# Training on multiple GPUs
+Training on multiple GPUs
 
             bash ./tools/dist_train.sh \
                 ${CONFIG_FILE} \
@@ -71,7 +65,7 @@ second:
             CONFIG_FILE='../configs/pascal_voc/cascade_food_voc.py'
 
 
-# Result as following:
+Result as following:
 
                 ---------------iou_thr: 0.5---------------
 
