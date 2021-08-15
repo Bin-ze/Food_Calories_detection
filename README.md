@@ -11,7 +11,7 @@ See mmdetection official website for **environment configuration**:
 https://github.com/open-mmlab/mmdetection
 
 
-Food_dataset:i
+Food_dataset:
 
             链接：https://pan.baidu.com/s/1w9uGNZbi0rQnMLuid8ngAw 
             提取码：9ve2 
