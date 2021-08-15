@@ -11,10 +11,17 @@ See mmdetection official website for **environment configuration**:
 https://github.com/open-mmlab/mmdetection
 
 
-Food_dataset:
-        baiduwangpab
+Food_dataset:i
+
+            链接：https://pan.baidu.com/s/1w9uGNZbi0rQnMLuid8ngAw 
+            提取码：9ve2 
+            --来自百度网盘超级会员V4的分享
+
 train_weight:
-        .pth
+
+            链接：https://pan.baidu.com/s/1VyA1xVu8wQcQ8bZIgGnC2Q 
+            提取码：bslv 
+            --来自百度网盘超级会员V4的分享
 
 Test existing models:
     # single-gpu testing
@@ -46,7 +53,6 @@ bash ./tools/dist_train.sh \
     ${GPU_NUM} \
     [optional arguments]
 CONFIG_FILE='../configs/pascal_voc/cascade_food_voc.py'
-
 
 
 Result as following:
