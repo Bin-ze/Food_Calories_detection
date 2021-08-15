@@ -3,11 +3,11 @@ We use copy-paste to generate disguised data
 We have annotated 380 pieces of data of 10 categories, and generated more data through this method for training the network.
 Got very high accuracy.
 
-**Instructions:**
+**Strat:**
 
-    python  example.py
+        run  python  example.py
 
-will Generate as many images as you want
+will Generate as many images as you want.
 
 
 
@@ -21,17 +21,48 @@ This greatly enhances the diversity of the data set, and then generates **label.
 
 **Format:**
 
-    ../copy-paste-aug/fake_image/0.jpg 152,203,273,330,6 266,192,375,334,6
+        ../copy-paste-aug/fake_image/0.jpg 152,203,273,330,6 266,192,375,334,6
 
-Then use txt_xml.py to generate xml annotations.
+        format:
+            file name   x_min,y_min,x_max,y_max,class_id
 
 
-Finally, use 
+Then:
 
-    python   voc_split_trainval.py 
+        run  python txt_xml.py 
+            
+will generate xml annotations.
+
+Please integrate the generated data set into the following form
+
+        -Food_voc
+            -Annotatations  (xml)
+            -JPEGImages    (image)
+
+Finally: 
+
+        run python   voc_split_trainval.py 
 
 to generate a data set similar to the VOC data set catalog.
 
+        -Food_voc
+            --Annotatations  (xml)
+                    1.xml
+                    2.xml
+                    ...
+                    
+            --ImageSets
+                    ---Main
+                        test.txt
+                        train.txt
+                        tarinval.txt
+                        val.txt
+            --JPEGImages    (image)
+                    1.jpg
+                    2.jpg
+                    ...
+            
+
 At this point, the data preparation work is over, 
-and the fake_Food data we need is generated
+and the fake_Food data we need is generated.
 
