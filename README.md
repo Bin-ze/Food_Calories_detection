@@ -39,7 +39,7 @@ Test existing models:
                 [--eval ${EVAL_METRICS}] \
                 [--show]
 
-# multi-gpu testing
+multi-gpu testing：
 
             bash tools/dist_test.sh \
                 ${CONFIG_FILE} \
